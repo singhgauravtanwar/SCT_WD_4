@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaurav's To-Do App - Task 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>📝 Gaurav's To-Do App</h1>
+    <p class="subtitle">SkillCraft Technology - Task 4</p>
+
+    <div class="add-box">
+        <input type="text" id="taskInput" placeholder="Enter your task...">
+        <input type="date" id="taskDate">
+        <input type="time" id="taskTime">
+        <button onclick="addTask()">+ Add Task</button>
+    </div>
+
+    <div class="filters">
+        <button class="filter-btn active" onclick="filterTasks('all', this)">All</button>
+        <button class="filter-btn" onclick="filterTasks('pending', this)">Pending</button>
+        <button class="filter-btn" onclick="filterTasks('completed', this)">Completed</button>
+        <button class="clear-btn" onclick="clearAll()">Clear All</button>
+    </div>
+
+    <p id="count">Total Tasks: 0 | Completed: 0 | Pending: 0</p>
+
+    <ul id="taskList"></ul>
+
+    <p class="footer">Made by Gaurav Singh Tanwar ❤️</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
